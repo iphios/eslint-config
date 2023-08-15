@@ -1,0 +1,32 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "description": "eslint custom config",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "author": "",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./default": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iphios/eslint-config.git"
+  },
+  "scripts": {
+    "lint": "DEBUG=eslint:cli,eslint:file-enumerator,eslint:cli-engine,eslint:source-code-fixer eslint . --fix"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "debug": "^4.3.4",
+    "eslint": "^8.47.0",
+    "eslint-config-custom": "file:"
+  },
+  "engines": {
+    "node": "18.*.*"
+  },
+  "private": true
+}
