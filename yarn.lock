@@ -195,6 +195,7 @@ escape-string-regexp@^4.0.0:
 "eslint-config-custom@file:.":
   version "0.0.1"
   dependencies:
+    debug "^4.3.4"
     js-yaml "^4.1.0"
 
 eslint-scope@^7.2.2:
