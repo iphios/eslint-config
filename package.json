@@ -23,7 +23,8 @@
   "devDependencies": {
     "debug": "^4.3.4",
     "eslint": "^8.47.0",
-    "eslint-config-custom": "file:"
+    "eslint-config-custom": "file:",
+    "eslint-plugin-custom": "git+ssh://git@github.com:iphios/eslint-plugin.git#v0.0.1"
   },
   "engines": {
     "node": "18.*.*"

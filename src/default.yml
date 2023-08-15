@@ -11,7 +11,8 @@ extends:
   - eslint:recommended
 parserOptions:
   ecmaVersion: latest
-plugins: []
+plugins:
+  - custom
 rules:
   camelcase:
     - error
@@ -26,6 +27,9 @@ rules:
   curly:
     - error
     - all
+  custom/name-length:
+    - error
+    - 50
   dot-notation: error
   eol-last:
     - error
