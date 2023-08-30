@@ -22,8 +22,17 @@
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.47.0",
-    "eslint-config-custom": "file:"
+    "eslint": "^8.48.0",
+    "eslint-config-custom": "file:",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0"
   },
   "engines": {
     "node": "18.*.*"

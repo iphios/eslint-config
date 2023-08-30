@@ -9,9 +9,11 @@ env:
   jest: true
 extends:
   - eslint:recommended
+  - plugin:prettier/recommended
 parserOptions:
   ecmaVersion: latest
-plugins: []
+plugins:
+  - prettier
 rules:
   camelcase:
     - error
@@ -65,7 +67,7 @@ rules:
   object-curly-newline:
     - error
     - ObjectPattern:
-        minProperties: 1
+        consistent: true
   object-shorthand:
     - error
     - properties
@@ -74,6 +76,17 @@ rules:
     - let: consecutive
   prefer-const: error
   prefer-object-has-own: error
+  prettier/prettier:
+    - warn
+    - arrowParens: avoid
+      bracketSameLine: true
+      bracketSpacing: true
+      printWidth: 1000
+      semi: true
+      singleQuote: true
+      tabWidth: 2
+      trailingComma: none
+      useTabs: false
   quotes:
     - error
     - single
@@ -84,7 +97,7 @@ rules:
     - always
   space-before-function-paren:
     - error
-    - anonymous: never
+    - anonymous: always
       asyncArrow: always
       named: never
   strict:
